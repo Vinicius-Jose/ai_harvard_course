@@ -1,0 +1,3 @@
+## Experimentation Process
+- To this project, on the creation model step I've tried at first use only one Convolution, one MaxPool and just one Dense layer for the last output.
+- So after using only the small data, i started using the complete data where i realized that the best model after a lot of tests, was using two Convolution and MaxPool, and change the kernel to a  lower size and added one new dense layers after the flatten layer.And i realized tha adding a Dropout layer increase, just a little, the accuracy, so I let it on my code In my tests i use both the small data and the complete data, with that I could realize wich of the experimental models was better. Finished with the model showed in the code
