@@ -1,0 +1,15 @@
+# Language
+- Natural Language Processing: fazer computadores entender linguagens naturais, considerando sintaxe e semantica
+- Semantics: o que uma sentença significa
+- Formal Grammar: sistema de regras para gerar sentenças em uma linguagem
+- n-gram: sequencia continua de n itens de um texto de exemplo
+- Tokenization: a tarefa  de dividir a sequencia de caracteres em pedaços (tokens)
+- Text Classification: dado um texto tentamos categoriza-lo
+- Bag-Of-Words model: modelo que representa o testo como uma coleçao nao ordenada de palavras
+- Naive Bayes: classificar texto utilizando a regra de Baye's
+- Laplace Smoothing: adicionando 1 para cada valor na nossa distribuição pretendendo que foi visto cada valor(palavra) pelo menos uma vez nos exemplos que temos
+- Word Representation: traduzir uma palavra para numeros para que possamos utilizar em uma rede neural
+- One-Hot Representation: representaao do significado como um vetor com apenas um 1 e o resto preenchido com 0
+- Distributed Representation: representaçao do significado distribuido entre multiplos valores
+- Attention: algoritimo que define dentro de uma frase quais palavras sao mais importantes que outras
+- Transformers: envia cada palavra individualmente para a mesma rede neural, podemos adicionar a posiçao da palavra de forma codificada

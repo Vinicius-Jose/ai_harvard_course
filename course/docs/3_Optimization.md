@@ -1,0 +1,34 @@
+# Optimization
+- Escolher a melhor opçao entre todas as possiveis
+- Local Search (Busca Local) - algoritimo de busca onde olha apena para o proximo no
+    - Utilizamos duas funçoes para achar o maximo e minimo chamadas de global maximum e global minimun(será o custo)
+- Hill Climbing (Algoritimo de local search)
+    - Considerando os vizinhos de um estado ele decide se ira para um com valor maior ou menot de acordo com a funçao desejada
+- Variantes do Hill CLimbing
+    - Steepest-Ascent: escolher o vizinho com o valor mais alto
+    - Stochastic: escolhe randomicamente dos vizinhos com valores mais alto
+    - Firsto-Choice: escolhe o primeiro valor mais alto que aparecer
+    - Random-Restart: conduzir o hill climbing variaves vezes
+    - Local Beam Search: eschole o K valores mais altos dos vizinhos
+
+- Simulated Annealing: Um outro algoritimo onde se move aleatoriamente buscando o maior valor
+- Linear Programming: Buscar a melhor solução baseado em uma quantidade de calculos:
+    -  Minimizar a função de custo
+    - Com constantes no formato a1x1 + a2x2 + ... + anxn<= b ou no formato de a1x1 + a2x2 + ... + anxn = b 
+    - Com barreiras para cada variavel li <= xi <= ui
+    - Algoritimos ex:
+        - Simplex
+        - Interior-Point
+- Constraint Satisfaction Problem: tendo um numero x de variaveis que pode assumir x valores e possuem algumas restriçoes busca-se a soluçao de quais valores as variaveis podem assumir
+    - Possui as variaveis
+    - Dominios : O que deve ser definido
+    - Contraints: restriçoes do problema
+- Tipos de restrições:
+    - Hard contraints: restriçoes que deven ser satisfazidas para uma soluçao correta
+    - Soft contratint: restriçoes que expressao alguma noçao de qual soluçao é melhor que as outras, mas nao impede a soluçao
+    - Unary Contraint: restriçao referente apenas a uma variavel
+    - Binary constraint: envolve duas variaveis
+- Node Consistency: quando todas as variaveis em um dominio de variaveis satisfaz uma retriçao unaria(unary constraint)
+- Arc consistency: quando todas as variaveis em um dominio de variaveis satisfaz as restriçoes binarias
+- Backtracking Search: dar valores as variaveis  e sempre que travar voltar ao estado anterior e tentar algo diferente
+- Maintaining arc-consistency: algoritimo por reforço da arc-consistency a cada alteraçao de variavel

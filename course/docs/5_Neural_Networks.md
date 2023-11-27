@@ -1,0 +1,30 @@
+# Neural Networks
+- Neuronios sao conectados entre eles e recebem sinais eletricos de outros neoronios
+- Neuronios processam sinais de entrada e podem ser ativados
+- Artificial Neural Networl: modelo matematico para aprendizado inspirado nas redes neurais biologicas
+- Step function: 1 se o valor for maior ou que zero caso contrario 0
+- Gradient Descent: algoritimo para minimizar a perda da IA
+    - Inicia-se com uma escolha aleatoria de weights
+    - Repete
+        - Calcula o Gradient baseado em todos os pontos de dados e escolhe qual direçao ira minimizar a perda
+        - Atualiza os weights de acordo com o gradient
+- Stochastic Gradient Descent: ao inves de olhar todos os dados olha apenas um ponto de dado, aumenta a velocidade de treino mas pode diminuir a acertabilidade
+- Mini-Batch Gradient Descent: ao inves de olhar todos os dados olha apenas uma parte desses dados (small batch), aumenta a velocidade de treino mas pode diminuir a acertabilidade
+- Perceptron: apresenta o problema de apenas ser capaz de aprender quando é possivel dividir linearmente as fronteiras de decisão
+- Multilayer Neural Network: rede neural onde com input e um output possui pelo menos uma camada escondida
+- Backpropagation: algoritimo para treinar redes neuras com camadas escondidas
+    - Inicia-se com uma escolha aleatoria de weights
+    - Repete:
+        - Calcular o erro da camada de saida
+        - Para cada camada, iniciando da camada de saida, e movendo internamente para as camadas escondidade
+            - Propagar o erro voltando uma camada
+- Deep Neural Networks: redes neurais com varias camadas escondidas
+- Dropout: temporariamente remove unidades dos neuronios aleatorimanete para previnir overfitting
+- Computer Vision: metodos computacionais para analisar e calcular sobre imagens
+- Image Convolution: aplicando um filtro que adiciona para cada pixel de uma imagem os seus vizinhos cortados de acordo com o tamanho do kernel da matrix
+- Pooling: reduzir o tamanho de uma imagem selecionando regioes da entrada do input
+    - Max Pooling: tecnica de pooling que dentro de uma matriz escolhe o pixel de maior de valor
+
+- Convolution Neura Netowrk: redes neurais que utilizam convolution, normalmente para analisar imagens
+- Feed-Forward Neural Network: rede neural que possui conexoes em apenas uma unica direçao. Problema deve sempre possuir uma entrada de tamanho fixo e uma saida de tamanha fixo
+- Reccurrent Neural Networks: redes neurais nao lineares e que nao possuem uma entrada nem saida de tamanho fixo , util para analise de sequencias ao inves de um objeto individual
