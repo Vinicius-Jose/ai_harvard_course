@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "python-ai-harvard"
+version = "0.1.0"
+description = ""
+authors = ["Vinícius José Pierri Nogueira <vinijosenog@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "python_ai_harvard"}]
+
+[tool.poetry.dependencies]
+python = "^3.10, <3.12"
+Pillow = "^10.1.0"
+submit50 = "^3.1.2"
+pygame = "^2.5.2"
+pomegranate = "^1.0.3"
+tensorflow-io-gcs-filesystem = "0.31.0"
+tensorflow = "^2.14.0"
+tensorflow-intel = "^2.14.0"
+opencv-python-headless = "^4.8.1.78"
+nltk = "^3.8.1"
+transformers = "^4.35.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

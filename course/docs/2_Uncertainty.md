@@ -1,0 +1,60 @@
+## Uncertainty (Incerteza)
+- Utilizar a informação já conhecida para tomar atitudes e decisões em algo desconhecido. Baseado em probabilidade
+- Representaçao de mundos possiveis (W)
+- Probabilidades de um mundo possivel P(w)
+    - Deve estar entre 0 e 1
+    - A soma de todas as probabilidades deve ser 1
+- Unconditional Probability:
+    - Grau de acreditar em uma preposiçao na falta de outra evidencia
+- Conditional Probability:
+    - Grau de acreditar em uma preposiçao dados alguma evidencia ja conhecida P(a|b)
+- Random Variable:
+    - A variavel em uma probabilidade teorica com o dominio de possiveis valores.
+        - Ex.: Voo {em tempo, atrasado, cancelado }
+- Probability Distribution:
+    - Probabilidade de cada uma das random variables:
+        - Ex.: Voo P(Voo) = <0.6,0.3,0.1>
+            - P(em tempo) = 0.6
+            - P(atrasado) = 0.3
+            - P(cancelado) = 0.1
+- Independence:
+    - O conhecimento sobre a ocorrencia de um evento nao afeta a probabilidade de outro evento
+- Baye's Rule:
+    - Teorema para calcular a probabilidade de P(b|a) baseado em P(b) e P(a|b)
+- Joint Probability(Probabilidade conjunta):
+    - Baseado em duas probabilidades realizar a distributiva das devidas probabilidades
+
+- Probability Rules:
+    - Negation: P(~a) = 1 - P(a)
+    - Inclusion-Exclusion: Probabilidade de a ou b: P(a v b) = P(a) + P(b) - P(a^b)
+    - Marginalization: probabilidade de um item baseado em outros conhecimentos, utilizado quando se tem uma joint distribution: P(a) = P(a,b) + P(a,~b)
+    - Conditioning: probabilidade de um item baseado em outros conhecimentos, utilizado quando se tem uma conditional Probability: P(a) = P(a|b)P(b) + P(a|~b)P(~b)
+- Bayesian Networks: Estrutura de dados que representa dependencia entre random variables
+    - Directed graph
+    - Cada nó representa uma variavel aleatoria 
+    - Uma flecha do X para o Y significa que X é "pai " de Y
+    - Cada nó tem uma probabilidade distributiva
+- Inference:
+    - Query X: variavel para computar a distribuiçao
+    - Evidenciar variaveis E observando variaveis para cada a
+    - Variaveis escondidadas Y nao evidenciadas no problema
+    - Objetivo calcular P(X(a))
+- Likelihood Weighting:
+    - Começa por fixar os valores para as variaveis evidenciadas
+    - Exemplos de nao evidencias para as variaveis utilizando probabilidade condicional na Bayesian Network
+    - Peso de cada exemplo pela sua probabilidade(Likelihood) : probabilidade de todas as evidencias
+- Markov Assumption
+    - Assume que o estado atual depende apenas de um numero fixo finito de estados anteriores
+- Markov Chain:
+    - Uma sequencia de variaveis aleatorioas onde a distribuiçao de cada variavel segue o Markov Assumption
+    - Transition Model:
+        - Modelo que atraves da probabilidade nos diz a tendencia do modelo
+- Hidden State:
+    - Um estado atual que não é interpretado diretamente pela IA mas sim algo que o representa:
+        - Ex uma ia de reconhecimento de voz:
+            - Hidden state: uma palavra falada
+            - Observation: as ondas sonoras do audio
+- Hidden Markov Model:
+    - Um modelo de Markov para um sistema com hidden states gerados por algum evento observado
+- Sensor Markov Assumption:
+    - Assume que uma evidencia de uma variavel depende apenas do estado correspondente
